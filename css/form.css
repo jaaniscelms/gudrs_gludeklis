@@ -1,0 +1,28 @@
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+input:not([type="file"]),
+textarea {
+  width: 300px;
+  padding: 5px 10px;
+  border: 1px solid var(--neutral-100);
+}
+
+input:not([type="file"]),
+textarea,
+fieldset { margin-bottom: 20px; }
+
+input:not([type="file"]) {
+  display: block;
+  height: 40px;
+}
+
+input[type="submit"],
+input[type="file"],
+input[type="button"] { cursor: pointer; }
+
+textarea { min-height: 100px; }
+input[type="submit"] { margin: 0; }
