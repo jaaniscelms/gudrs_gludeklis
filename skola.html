@@ -28,68 +28,98 @@
       </div>
     </header>
 
-    <div id ="skola">
-      <div id="info">
-        <h2> Pamatinfo</h2>
-        <input type="text" id="school_name" name="sname" alt="Nosaukums"><br>
-        <!--<button id="image" onclick="changeImage();">Pievieno attēlu!</button>-->
-        <label for="img">Izvēlies logo:</label>
-        <input type="file" id="img" name="img" accept="image/*"><br>
-        <input type="text" id="Summary" name="summary" alt="Apraksts"><br>
-          <input type="button" value="Apstiprināt">
+    <div class="content">
+      <div class="content_wrapper">
+        <form class="pamatinfo">
+          <h2> Pamatinfo</h2>
+          <input type="text" placeholder="Nosaukums">
+          <fieldset>
+            <label for="img">Izvēlies logo:</label>
+            <input type="file" name="img" accept="image/*">
+          </fieldset>
+          <textarea placeholder="Apraksts"></textarea>
+          <input class="button" type="submit" value="Saglabāt">
+        </form>
+
+        <div class="teachers">
+          <h2>Pasniedzēji</h2>
+          <table>
+            <thead>
+              <tr>
+                <th class="vards">Vārds, uzvārds</th>
+                <th class="epasts">E-pats</th>
+                <th class="tel">Tel. nr.</th>
+                <th class="prieksmets">Priekšmets</th>
+                <th>Darbības</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="vards">Andris Bērziņš</td>
+                <td class="epasts">andris.berzins@gmail.com</td>
+                <td class="tel">26752897</td>
+                <td class="prieksmets">Vēsture, Literatūra</td>
+                <td>
+                  <div class="buttons">
+                    <input class="button" type="button" value="Labot">
+                    <input class="button button_error" type="button" value="Dzēst">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="vards">Pēteris Skuja</td>
+                <td class="epasts">peteris.skuja@gmail.com</td>
+                <td class="tel">26865415</td>
+                <td class="prieksmets">Sports</td>
+                <td>
+                  <div class="buttons">
+                    <input class="button" type="button" value="Labot">
+                    <input class="button button_error" type="button" value="Dzēst">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="vards">Anna Panna</td>
+                <td class="epasts">anna.panna@gmail.com</td>
+                <td class="tel">26444321</td>
+                <td class="prieksmets">Ekonomika</td>
+                <td>
+                  <div class="buttons">
+                    <input class="button" type="button" value="Labot">
+                    <input class="button button_error" type="button" value="Dzēst">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="vards">Valdis Liepa</td>
+                <td class="epasts">valdis.liepa@gmail.com</td>
+                <td class="tel">26865415</td>
+                <td class="prieksmets">Matemātika</td>
+                <td>
+                  <div class="buttons">
+                    <input class="button" type="button" value="Labot">
+                    <input class="button button_error" type="button" value="Dzēst">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="vards">Elita Bērziņa</td>
+                <td class="epasts">elita.berzina@gmail.com</td>
+                <td class="tel">26753159</td>
+                <td class="prieksmets">Mājturība</td>
+                <td>
+                  <div class="buttons">
+                    <input class="button" type="button" value="Labot">
+                    <input class="button button_error" type="button" value="Dzēst">
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <input class="button" type="button" value="Pievienot pasniedzēju">
+        </div>
       </div>
-    <div id="teacher" >
-      <h2> Pasniedzēji</h2>
-      <table id= "teacher1">
-        <tr>
-          <th id="vards">Vārds, uzvārds</th>
-          <th id="epasts">E-pats</th>
-          <th id="tel">Tel. nr.</th>
-        <th id="prieksmets">Priekšmets</th>
-        <th>Darbības</th>
-        </tr>
-       <tr>
-          <th id="vards">Andris Bērziņš</th>
-          <th id="epasts">andris.berzins@gmail.com</th>
-          <th id="tel">26752897</th>
-        <th id="prieksmets">Vēsture, Literatūra</th>
-        <th>Labot Dzēst</th>
-        </tr>
-        <tr>
-          <th id="vards">Pēteris Skuja</th>
-          <th id="epasts">peteris.skuja@gmail.com</th>
-          <th id="tel">26865415</th>
-        <th id="prieksmets">Sports</th>
-        <th>Labot Dzēst</th>
-        </tr>
-        <tr>
-          <th id="vards">Anna Panna</th>
-          <th id="epasts">anna.panna@gmail.com</th>
-          <th id="tel">26444321</th>
-        <th id="prieksmets">Ekonomika</th>
-        <th>Labot Dzēst</th>
-        </tr>
-        <tr>
-          <th id="vards">Valdis Liepa</th>
-          <th id="epasts">valdis.liepa@gmail.com</th>
-          <th id="tel">26865415</th>
-        <th id="prieksmets">Matemātika</th>
-        <th>Labot Dzēst</th>
-        </tr>
-        <tr>
-          <th id="vards">Elita Bērziņa</th>
-          <th id="epasts">elita.berzina@gmail.com</th>
-          <th id="tel">26753159</th>
-        <th id="prieksmets">Mājturība</th>
-        <th>Labot Dzēst</th>
-        </tr>
-
-      </table>
-      <br>
-       <input type="button" value="Pievienot pasniedzēju">
     </div>
-    </div>
-
-
   </body>
 </html>
