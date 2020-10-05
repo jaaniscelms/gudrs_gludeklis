@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/color.css">
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/skola.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/skola.css">
 
-  <title>Gudrs Gludeklis</title>
-</head>
+    <title>Gudrs Gludeklis</title>
+  </head>
   <body>
-    <div id ="skola">
-      <div id="header">
-        <div id ="logo" >
-          <img src="img/logo.png" width=100px height=70px>
-        </div>
-        <div id="name" >
-          <h1> Skolas nosaukums</h1>
-        </div>
-        <div id="menu">
-          <ul>
-            <li><a href="index.html">Iziet</a></li>
-            <li><a href="klases.html">Klase</a></li>
-             <li><a href="skola.html">Skola</a></li>
-          </ul>
-        </div>
+    <header>
+      <div class="content_wrapper">
+        <a href="/" class="logo">
+          <img src="img/lu_logo.png">
+        </a>
+        <nav>
+          <a href="skola.html" class="active">Skola</a>
+          <a href="klases.html">Klase</a>
+          <a href="index.html">Iziet</a>
+        </nav>
       </div>
-      <br><br><p></p>
+    </header>
+
+    <div id ="skola">
       <div id="info">
         <h2> Pamatinfo</h2>
         <input type="text" id="school_name" name="sname" alt="Nosaukums"><br>
