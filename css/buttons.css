@@ -1,0 +1,37 @@
+.button {
+  display: block;
+  cursor: pointer;
+  padding: 4px 12px;
+  background: var(--neutral-50);
+  border: 1px solid var(--neutral-100);
+  color: var(--neutral-900);
+  font-size: 16px;
+}
+
+.button:hover {
+  background: var(--neutral-100);
+  border-color: var(--neutral-200);
+}
+
+.button.button_primary {
+  background: var(--blue-700);
+  color: var(--neutral-0);
+  border-color: transparent;
+}
+
+.button.button_primary:hover { background: var(--blue-900); }
+
+.button.button_error {
+  background: var(--red-700);
+  color: var(--neutral-0);
+  border-color: transparent;
+}
+
+.button.button_error:hover { background: var(--red-900); }
+
+.buttons {
+  display: inline-flex;
+  align-items: center;
+}
+
+.buttons .button:not(:first-of-type) { margin-left: 16px;}
