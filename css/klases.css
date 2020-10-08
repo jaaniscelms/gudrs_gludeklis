@@ -3,3 +3,11 @@
     margin-top: 40px;
     margin-bottom: 40px;
  }
+ .class_teachers table th:last-child {
+   text-align: right;
+    
+ }
+ .class_teachers table .button {
+    float:right;
+    
+ }
