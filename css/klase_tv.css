@@ -1,0 +1,81 @@
+:root {
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	display: grid;
+	grid-template-columns: 80% 20%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.logo {
+	grid-area: 'logo';
+	padding-left: 8rem;
+	color: white;
+	font-size: 26px;
+}
+
+.logo img {
+	width: auto;
+	height: 36px;
+	filter: invert(100%);
+}
+
+.navList {
+	grid-area: 'navList';
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navList a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navList a:hover {
+	background-color: #111;
+}
+
+section {
+	margin: auto;
+	margin-top: 8rem;
+	margin-bottom: 8rem;
+	width: 30%;
+}
+
+.element {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.subject {
+	float: left;
+}
+
+.time {
+	float: right;
+}
+
+.important {
+	font-size: 30px;
+}
+
+footer {
+	padding: 4rem;
+	color: white;
+	background-color: black;
+}
