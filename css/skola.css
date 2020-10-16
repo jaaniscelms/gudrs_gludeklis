@@ -1,2 +1,5 @@
 .teachers { margin-top: 50px; }
 .teachers table { margin-bottom: 20px; }
+.teachers table .dati{
+    width: 95%;
+}
