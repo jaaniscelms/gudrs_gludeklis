@@ -20,6 +20,8 @@ header .logo {
   display: block;
 }
 
+header .logo img { height: 40px; }
+
 header nav a {
   color: var(--neutral-600);
   margin-left: 10px;
