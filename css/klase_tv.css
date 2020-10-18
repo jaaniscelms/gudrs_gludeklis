@@ -1,61 +1,44 @@
-.container{
-	display:grid;
-	grid-auto-flow: row;	
+header .current_class { font-size: 20px; }
+
+.stundas {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.top, .footer {
-	background-color: white;
-	font-weight: bold;
-	font-size: 30px;	
+.stundas h1 {
+  font-size: 36px;
+  margin: 0 0 40px;
+  display: flex;
+  align-items: center;
 }
 
-.top{
-	text-align: left;
+.stundas h1 span {
+  margin-left: auto;
+  font-size: 48px;
 }
 
-.footer{
-	text-align: center;
-	line-height: 20vh;
+.stundas li {
+  font-size: 32px;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 4px;
 }
 
-.middle{
-	display: grid;
-	grid-auto-flow: column;
-	grid-template-columns: 20fr 30fr 30fr 20fr;
-	background-color: #e6f2ff;
-	text-align: left;
-	font-weight: bold;
-	font-size: 30px;
+.stundas li:nth-of-type(odd) { background: var(--neutral-50); }
+
+.stundas li.nenotiek {
+  color: var(--neutral-0);
+  font-weight: 500;
+  background: var(--red-500);
 }
 
-.middle > div {	
-	line-height: 10vh;
-	font-size: 30px;
+.stundas li.patreiz_notiek {
+  font-size: 42px;
+  padding: 20px 40px;
+  margin: 0 -40px;
+  background: var(--blue-500);
+  color: var(--neutral-0);
 }
 
-.subjects, .times, .right{
-	
-	display:grid;
-	grid-auto-flow:row;
-	grid-template-rows:repeat(10, 1fr);
-	margin-left:5rem;
-}
-
-.day, .time{
-	font-size: 40px;
-	color:blue;
-}
-
-img{
-	width:20vw;
-	height:20vh;
-	margin-left:2vw;
-	margin-top:2vh;
-	margin-bottom:1vh;
-}
-
-body{
-	font-family: Arial, Helvetica, sans-serif;
-	border:3px solid green;
-}
-
+.stundas .stunda { margin-right: auto; }
