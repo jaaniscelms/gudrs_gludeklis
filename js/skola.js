@@ -8,7 +8,7 @@ add.addEventListener('click', function() {
        <td><input id="dati1" class ="dati" type="text"></td>
        <td><input id="dati2"class ="dati" type="text"></td>
        <td><input id="dati3"class ="dati" type="text"></td>
-       <td><input class="button" onclick="save(x)" type="button" value="Saglabāt" ></td>
+       <td><input class="button" onclick="save()" type="button" value="Saglabāt" ></td>
     `;            
     tabula.appendChild(rinda);    
 });
