@@ -3,6 +3,8 @@ table {
   border-collapse: collapse;
 }
 
+table + .button { margin-top: 20px; }
+
 thead th {
   font-weight: 600;
   color: var(--neutral-400);
@@ -47,3 +49,6 @@ tbody tr:nth-of-type(odd) { background: var(--neutral-50); }
   background: none;
   margin: 10px 0;
 }
+
+.content table td input[type="checkbox"],
+.content table td input[type="radio"] { margin: 0; }
