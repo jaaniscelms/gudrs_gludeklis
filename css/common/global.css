@@ -17,7 +17,7 @@ img {
   max-height: 100%;
 }
 
-.content { padding: 70px 20px; }
+.content { padding: 70px 20px 150px 20px; }
 
 .content_wrapper {
   max-width: 1200px;
