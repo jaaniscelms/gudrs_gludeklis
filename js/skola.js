@@ -18,7 +18,8 @@ document.getElementById('pievieno').addEventListener('click', function(){
   document.querySelectorAll(".save").forEach(function(currentIndex){
     currentIndex.onclick = function(){
       for(i=0;i<4;i++){
-        this.closest('tr').cells[i].innerHTML = this.closest('tr').children[i].querySelector('input').value
+        var cells = this.closest('tr').children[i]
+        cells.innerHTML = cells.querySelector('input').value
       }
 
       this.closest('tr').classList.remove('row_edit')
