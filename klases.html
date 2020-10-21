@@ -1,93 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/color.css">
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/klases.css">
-  <link rel="stylesheet" href="css/table.css">
-  <link rel="stylesheet" href="css/buttons.css">
-  <title>Gudrs Gludeklis</title>
-</head>
-<header>
-  <div class="content_wrapper">
-    <a href="/" class="logo">
-      <img src="img/lu_logo.png">
-    </a>
-    <nav>
-      <a href="skola.html" class="active">Skola</a>
-      <a href="klases.html">Klase</a>
-      <a href="index.html">Iziet</a>
-    </nav>
-  </div>
-</header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common/normalize.css">
+    <link rel="stylesheet" href="css/common/color.css">
+    <link rel="stylesheet" href="css/common/global.css">
+    <link rel="stylesheet" href="css/common/header.css">
+    <link rel="stylesheet" href="css/common/table.css">
+    <link rel="stylesheet" href="css/common/form.css">
+    <link rel="stylesheet" href="css/common/buttons.css">
+    <title>Gudrs Gludeklis</title>
+  </head>
   <body>
-    <div class="class_teachers">
-      <table>
-        <thead>
-         <tr>
-           <th class="klase">Nosaukums</th>
-           <th class="audzinatajs">Audzinātājs</th>
-           <th>Darbības</th>
-         </tr>
-        </thead>      
-        <tbody>
-          <tr>
-            <td class="klase"> 1.a</td>
-            <td class="audzinatajs">Andris Bērziņš</td>          
-            <td>
-              <div class="buttons">
-                <input class="button" type="button" value="Labot">
-                <input class="button button_error" type="button" value="Dzēst">
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="klase"> 1.b</td>
-            <td class="audzinatajs">Pēteris Skuja</td>         
-            <td>
-              <div class="buttons">
-                <input class="button" type="button" value="Labot">
-                <input class="button button_error" type="button" value="Dzēst">
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="klase"> 2.a</td>
-            <td class="audzinatajs">Anna Panna</td>
-            <td>
-              <div class="buttons">
-                <input class="button" type="button" value="Labot">
-                <input class="button button_error" type="button" value="Dzēst">
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="klase"> 2.b</td>
-            <td class="audzinatajs">Valdis Liepa</td>          
-            <td>
-              <div class="buttons">
-                <input class="button" type="button" value="Labot">
-                <input class="button button_error" type="button" value="Dzēst">
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="klase"> 2.c</td>
-            <td class="audzinatajs">Elita Bērziņa</td>          
-            <td>
-              <div class="buttons">
-                <input class="button" type="button" value="Labot">
-                <input class="button button_error" type="button" value="Dzēst">
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <input class="button" type="button" value="Pievienot klasi">
+    <header>
+      <div class="content_wrapper">
+        <a href="index.html" class="logo">
+          <img src="img/jtv_logo.svg">
+        </a>
+        <nav>
+          <a href="skola.html">Skola</a>
+          <a href="klases.html" class="active">Klases</a>
+          <a href="login.html">Iziet</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="content_wrapper">
+        <table class="school_classes">
+          <thead>
+           <tr>
+             <th class="klase">Nosaukums</th>
+             <th class="audzinatajs">Audzinātājs</th>
+             <th>Darbības</th>
+           </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="klase"> 1.a</td>
+              <td class="audzinatajs">Andris Bērziņš</td>
+              <td>
+                <div class="buttons">
+                  <input class="button" type="button" value="Labot">
+                  <input class="button button_error" type="button" value="Dzēst">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="klase"> 1.b</td>
+              <td class="audzinatajs">Pēteris Skuja</td>
+              <td>
+                <div class="buttons">
+                  <input class="button" type="button" value="Labot">
+                  <input class="button button_error" type="button" value="Dzēst">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="klase"> 2.a</td>
+              <td class="audzinatajs">Anna Panna</td>
+              <td>
+                <div class="buttons">
+                  <input class="button" type="button" value="Labot">
+                  <input class="button button_error" type="button" value="Dzēst">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="klase"> 2.b</td>
+              <td class="audzinatajs">Valdis Liepa</td>
+              <td>
+                <div class="buttons">
+                  <input class="button" type="button" value="Labot">
+                  <input class="button button_error" type="button" value="Dzēst">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="klase"> 2.c</td>
+              <td class="audzinatajs">Elita Bērziņa</td>
+              <td>
+                <div class="buttons">
+                  <input class="button" type="button" value="Labot">
+                  <input class="button button_error" type="button" value="Dzēst">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <input class="button" type="button" value="Pievienot klasi">
+      </div>
     </div>
   </body>
 </html>

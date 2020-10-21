@@ -1,124 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-		rel="stylesheet"/>
-  <link rel='stylesheet' type='text/css' media='screen' href='css/klase_tv.css'>
-  <script src='main.js'></script>
-  <title>Klases</title>
-</head>
-  <body>
-  <nav class="navbar">
-			<div class="logo">
-				<img src="img/school-bag.svg" alt="schoolbag" />
-				<span>Skola</span>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<link rel="stylesheet" href="css/common/normalize.css">
+		<link rel="stylesheet" href="css/common/color.css">
+		<link rel="stylesheet" href="css/common/global.css">
+		<link rel="stylesheet" href="css/common/header.css">
+		<link rel="stylesheet" href="css/common/buttons.css">
+		<link rel="stylesheet" href="css/klase_tv.css">
+		<title>Klases</title>
+	</head>
+	<body>
+		<header>
+			<div class="content_wrapper">
+				<a href="index.html" class="logo">
+					<img src="img/jtv_logo.svg">
+				</a>
+				<nav>
+					<a href="index.html">Klašu saraksts</a>
+				</nav>
 			</div>
-			<div class="navList">
-				<a href="">Skola</a>
-				<a href="">Klases</a>
-				<a href="">Iziet</a>
-			</div>
-		</nav>
-
-		<section>
-			<div class="subjects">
-				<div class="element">
-					<div class="subject">
-						<span>11.09.2020</span>
-						<h1>Piektdiena</h1>
-					</div>
-					<div class="time1">
-						<h1>11:37</h1>
-					</div>
-				</div>
-
-				<div class="element">
-					<div class="subject">
-						<h3>0 Matemātika</h3>
-					</div>
-					<div class="time">
-						<h3>7:45 - 8:25</h3>
-					</div>
-				</div>
-
-				<div class="element">
-					<div class="subject">
-						<h3>1 Matemātika</h3>
-					</div>
-					<div class="time">
-						<h3>8:30 - 9:10</h3>
-					</div>
-				</div>
-
-				<div class="element">
-					<div class="subject">
-						<h3>2 Ģeogrāfija</h3>
-					</div>
-					<div class="time">
-						<h3>9:15 - 9:55</h3>
-					</div>
-				</div>
-
-				<div class="element">
-					<div class="subject">
-						<h3>3 Literatūra</h3>
-					</div>
-					<div class="time">
-						<h3>10:15 - 10:55</h3>
-					</div>
-				</div>
-
-				<div class="element important">
-					<div class="subject">
-						<h3>4 Literatūra</h3>
-					</div>
-					<div class="time">
-						<h3>11:20 - 12:05</h3>
-					</div>
-				</div>
-
-				<div class="element">
-					<div class="subject">
-						<h3>5 Sports</h3>
-					</div>
-					<div class="time">
-						<h3>12:35 - 13:05</h3>
-					</div>
-				</div>
-
-				<div class="element">
-					<div class="subject">
-						<h3>6 Mājturība</h3>
-					</div>
-					<div class="time">
-						<h3>13:20 - 14:00</h3>
-					</div>
-				</div>
-
-				<div class="element">
-					<div class="subject">
-						<h3>7 Ekonomika</h3>
-					</div>
-					<div class="time">
-						<h3>14:05 - 14:45</h3>
-					</div>
-				</div>
-
-				<div class="element">
-					<div class="subject">
-						<h3>8 Ekonomika</h3>
-					</div>
-					<div class="time">
-						<h3>14:50 - 15:30 NENOTIEK</h3>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<footer>
-			<p>&copy Gudrs gludeklis 2020</p>
-		</footer>
-  </body>
+		</header>
+		<div class="content">
+			<ul class="stundas">
+				<h1>7C - Piektdiena<span>11:37</span></h1>
+				<li>
+					<span class="stunda">0 Matemātika</span>
+					<span class="laiks">7:45 - 8:25</span>
+				</li>
+				<li>
+					<span class="stunda">1 Matemātika</span>
+					<span class="laiks">8:30 - 9:10</span>
+				</li>
+				<li>
+					<span class="stunda">2 Ģeogrāfija</span>
+					<span class="laiks">9:15 - 9:55</span>
+				</li>
+				<li>
+					<span class="stunda">3 Literatūra</span>
+					<span class="laiks">10:15 - 10:55</span>
+				</li>
+				<li class="patreiz_notiek">
+					<span class="stunda">4 Literatūra</span>
+					<span class="laiks">11:20 - 12:05</span>
+				</li>
+				<li>
+					<span class="stunda">5 Sports</span>
+					<span class="laiks">12:35 - 13:05</span>
+				</li>
+				<li>
+					<span class="stunda">6 Mājturība</span>
+					<span class="laiks">13:20 - 14:00</span>
+				</li>
+				<li>
+					<span class="stunda">7 Ekonomika</span>
+					<span class="laiks">14:05 - 14:45</span>
+				</li>
+				<li class="nenotiek">
+					<span class="stunda">8 NENOTIEK</span>
+					<span class="laiks">14:50 - 15:30</span>
+				</li>
+			</ul>
+		</div>
+	</body>
 </html>

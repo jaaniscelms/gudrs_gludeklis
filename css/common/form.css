@@ -26,3 +26,9 @@ input[type="button"] { cursor: pointer; }
 
 textarea { min-height: 100px; }
 input[type="submit"] { margin: 0; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: 16px;
+  height: 16px;
+}

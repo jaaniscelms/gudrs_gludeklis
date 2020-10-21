@@ -1,6 +1,12 @@
-form {
-    width: 300px;
-    margin: auto;
-    text-align: left;
+.login form {
+  width: 300px;
+  margin: auto;
 }
 
+.login .logo {
+  display: block;
+  text-align: center;
+  margin: 20vh 0 60px;
+}
+
+.login .logo img { max-height: 80px; }

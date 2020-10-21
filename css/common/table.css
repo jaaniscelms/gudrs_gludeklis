@@ -3,6 +3,8 @@ table {
   border-collapse: collapse;
 }
 
+table + .button { margin-top: 20px; }
+
 thead th {
   font-weight: 600;
   color: var(--neutral-400);
@@ -12,6 +14,9 @@ thead th {
 
 th, td { padding: 0 10px; }
 td { height: 40px; }
+
+th:last-of-type, td:last-of-type { text-align: right; }
+td:last-of-type { padding-right: 0; }
 
 tbody tr:nth-of-type(odd) { background: var(--neutral-50); }
 
@@ -34,3 +39,16 @@ tbody tr:nth-of-type(odd) { background: var(--neutral-50); }
   color: var(--neutral-0);
   background: var(--red-400);
 }
+
+.content table .row_edit { background: var(--neutral-0);}
+.content table .row_edit td { padding: 0; }
+
+.content table .row_edit td input[type="text"] {
+  border: none;
+  border-bottom: 1px solid var(--neutral-100);
+  background: none;
+  margin: 10px 0;
+}
+
+.content table td input[type="checkbox"],
+.content table td input[type="radio"] { margin: 0; }
