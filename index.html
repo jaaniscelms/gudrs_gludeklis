@@ -11,12 +11,21 @@
     <div class="center">
       <img src="img/jtv_logo.svg">
       <p>Laipni lūgti Jelgavas Tehnoloģiju vidusskolā!</p>
-      <details>
-        <summary>Izvēlaties klasi</summary>
-        <a href="klase_tv.html">7.a</a>
-        <a href="klase_tv.html">7.b</a>
-        <a href="klase_tv.html">7.c</a>
-      </details>
+      <input id="klase" type="text" list="klases" />
+      <datalist id="klases">
+      <option value="7.a"></option>
+      <option value="7.b"></option>
+      <option value="7.c" ></option>
+      </datalist> 
+      <input type="submit" id="sbm" onclick="clk()" value="Doties uz klasi"/>
+      <script>
+function clk()
+{
+  if(document.getElementById("klases").value = "7.a")
+  {    
+    location.href='klase_tv.html';
+  }
+}      </script>    
     </div>
   </body>
 </html>
