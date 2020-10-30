@@ -1,7 +1,7 @@
 //Iegūstam datus no API 
 async function iegutSkolotajuDatusNoApi()
 {
-    let datiNoApi = await fetch('json/skola.json')
+    let datiNoApi = await fetch('http://janiscelms.com/gudrs_gludeklis/json/skola.json')
     let datiJson = await datiNoApi.json();
     return datiJson;
 }
