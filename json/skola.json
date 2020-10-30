@@ -1,0 +1,40 @@
+{
+    "pasniedzeji":
+[
+{
+    "vards": "Andris",
+    "uzvards": "Bērziņš",
+    "epasts": "andris.berzins@gmail.com",
+    "tel_num":"26752897",
+    "prieksmets": "Vēsture, Literatūra"
+},
+{
+    "vards": "Pēteris",
+    "uzvards": "Skuja",
+    "epasts": "peteris.skuja@gmail.com",
+    "tel_num":"26865415",
+    "prieksmets": "Sports"
+},
+{
+    "vards": "Anna",
+    "uzvards": "Panna",
+    "epasts": "anna.panna@gmail.com",
+    "tel_num":"26444321",
+    "prieksmets": "Ekonomika"
+},
+{
+    "vards": "Valdis",
+    "uzvards": "Liepa",
+    "epasts": "valdis.liepa@gmail.com",
+    "tel_num":"26865415",
+    "prieksmets": "Matemātika"
+},
+{
+    "vards": "Elita",
+    "uzvards": "Bērziņa",
+    "epasts": "elita.berzina@gmail.com",
+    "tel_num":"26753159",
+    "prieksmets": "Mājturība"
+}
+]
+}
