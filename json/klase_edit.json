@@ -1,0 +1,197 @@
+{
+    "stundas": [
+        {
+            "diena":1,
+            "nr": "0",
+            "prieksmets": "Vēsture",
+            "pasniedzejs": "Andris Bērziņš",
+            "laiks": "9:15 - 9:55",
+            "nenotiek":"unchecked"
+        },
+        {
+            "diena":1,
+            "nr": "1",
+            "prieksmets": "Sports",
+            "pasniedzejs": "Pēteris Skuja",
+            "laiks": "10:15 - 10:55",
+            "nenotiek":"checked"
+        },
+        {
+            "diena":1,
+            "nr": "2",
+            "prieksmets": "Ekonomika",
+            "pasniedzejs": "Anna Panna",
+            "laiks": "11:20 - 12:05",
+            "nenotiek":"unchecked"
+        },
+        {
+            "diena":1,
+            "nr": "3",
+            "prieksmets": "Matemātika",
+            "pasniedzejs": "Valdis Liepa",
+            "laiks": "12:35 - 13:05",
+            "nenotiek":"checked"
+        },
+        {
+            "diena":1,
+            "nr": "4",
+            "prieksmets": "Mājturība",
+            "pasniedzejs": "Elita Bērziņa",
+            "laiks": "12:20 - 14:00",
+            "nenotiek":"checked"
+        },
+        {
+            "diena":2,
+            "nr": "0",
+            "prieksmets": "Ekonomika",
+            "pasniedzejs": "Anna Panna",
+            "laiks": "9:15 - 9:55",
+            "nenotiek":"unchecked"
+        },
+        {
+            "diena":2,
+            "nr": "1",
+            "prieksmets": "Matemātika",
+            "pasniedzejs": "Valdis Liepa",
+            "laiks": "10:15 - 10:55",
+            "nenotiek":"checked"
+        },
+        {
+            "diena":2,
+            "nr": "2",
+            "prieksmets": "Mājturība",
+            "pasniedzejs": "Elita Bērziņa",
+            "laiks": "11:20 - 12:05",
+            "nenotiek":"unchecked"
+        },
+        {
+            "diena":2,
+            "nr": "3",
+            "prieksmets": "Vēsture",
+            "pasniedzejs": "Andris Bērziņš",
+            "laiks": "12:35 - 13:05",
+            "nenotiek":"checked"
+        },
+        {
+            "diena":2,
+            "nr": "4",
+            "prieksmets": "Sports",
+            "pasniedzejs": "Pēteris Skuja",
+            "laiks": "12:20 - 14:00",
+            "nenotiek":"checked"
+        },
+        {
+            "diena":3,
+            "nr": "0",
+            "prieksmets": "Literatūra",
+            "pasniedzejs": "Andris Bērziņš",
+            "laiks": "9:15 - 9:55",
+            "nenotiek":"unchecked"
+        },
+        {
+            "diena":3,
+            "nr": "1",
+            "prieksmets": "Latviešu valoda",
+            "pasniedzejs": "Andris Bērziņš",
+            "laiks": "10:15 - 10:55",
+            "nenotiek":"checked"
+        },
+        {
+            "diena":3,
+            "nr": "2",
+            "prieksmets": "Matemātika",
+            "pasniedzejs": "Valdis Liepa",
+            "laiks": "11:20 - 12:05",
+            "nenotiek":"unchecked"
+        },
+        {
+            "diena":3,
+            "nr": "3",
+            "prieksmets": "Dabaszinības",
+            "pasniedzejs": "Anna Panna",
+            "laiks": "12:35 - 13:05",
+            "nenotiek":"checked"
+        },
+        {
+            "diena":4,
+            "nr": "0",
+            "prieksmets": "Sociālās zinības",
+            "pasniedzejs": "Pēteris Skuja",
+            "laiks": "9:15 - 9:55",
+            "nenotiek":"unchecked"
+        },
+        {
+            "diena":4,
+            "nr": "1",
+            "prieksmets": "Literatūra",
+            "pasniedzejs": "Andris Bērziņš",
+            "laiks": "10:15 - 10:55",
+            "nenotiek":"checked"
+        },
+        {
+            "diena":4,
+            "nr": "2",
+            "prieksmets": "Matemātika",
+            "pasniedzejs": "Valdis Liepa",
+            "laiks": "11:20 - 12:05",
+            "nenotiek":"unchecked"
+        },
+        {
+            "diena":4,
+            "nr": "3",
+            "prieksmets": "Latviešu valoda",
+            "pasniedzejs": "Andris Bērziņš",
+            "laiks": "12:35 - 13:05",
+            "nenotiek":"checked"
+        },
+        {
+            "diena":4,
+            "nr": "4",
+            "prieksmets": "Angļu valoda",
+            "pasniedzejs": "Anna Panna",
+            "laiks": "12:20 - 14:00",
+            "nenotiek":"checked"
+        },
+        {
+            "diena":5,
+            "nr": "0",
+            "prieksmets": "Angļu valoda",
+            "pasniedzejs": "Anna Panna",
+            "laiks": "9:15 - 9:55",
+            "nenotiek":"unchecked"
+        },
+        {
+            "diena":5,
+            "nr": "1",
+            "prieksmets": "Datorika",
+            "pasniedzejs": "Valdis Liepa",
+            "laiks": "10:15 - 10:55",
+            "nenotiek":"checked"
+        },
+        {
+            "diena":5,
+            "nr": "2",
+            "prieksmets": "Matemātika",
+            "pasniedzejs": "Valdis Liepa",
+            "laiks": "11:20 - 12:05",
+            "nenotiek":"unchecked"
+        },
+        {
+            "diena":5,
+            "nr": "3",
+            "prieksmets": "Sports",
+            "pasniedzejs": "Pēteris Skuja",
+            "laiks": "12:35 - 13:05",
+            "nenotiek":"checked"
+        },
+        {
+            "diena":5,
+            "nr": "4",
+            "prieksmets": "Latviešu valoda",
+            "pasniedzejs": "Andris Bērziņš",
+            "laiks": "12:20 - 14:00",
+            "nenotiek":"checked"
+        }
+    ]
+}
+
