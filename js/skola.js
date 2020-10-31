@@ -1,10 +1,9 @@
 // Aizpilda teachers tbody ar skola.json skolotaju datiem
 fetch('/json/skola.json')
   .then(response => response.json())
-  .then(data => data.forEach(element => {
-      let tr = document.createElement("tr");
-
-      tr.innerHTML = `
+  .then(data => data.forEach(element =>
+    document.querySelector('.teachers tbody').innerHTML += `
+      <tr>
         <td>${element.vards} ${element.uzvards}</td>
         <td>${element.epasts}</td>
         <td>${element.tel_num}</td>
@@ -15,10 +14,8 @@ fetch('/json/skola.json')
             <input class="button button_error" type="button" value="Dzēst">
           </div>
         </td>
-      `
-
-      document.querySelector('.teachers tbody').appendChild(tr)
-    })
+      </tr>`
+    )
   )
 
 // Pievienot pasniedzeju
