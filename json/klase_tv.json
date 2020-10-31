@@ -1,4 +1,58 @@
-{
-  "sample_key1": "Sample value 1",
-  "sample_key2": "Sample value 2"
+﻿{
+    "stundas": [
+        {
+            "stunda": "0 Matemātika",
+            "laiks": "7:45 - 8:25",
+            "nenotiek":"unchecked",
+            "patreiz_notiek":"unchecked"
+        },
+        {
+            "stunda": "1 Matemātika",
+            "laiks": "8:30 - 9:10",
+            "nenotiek":"unchecked",
+            "patreiz_notiek":"unchecked"
+        },
+        {
+            "stunda": "2 Ģeogrāfija",
+            "laiks": "9:15 - 9:55",
+            "nenotiek":"unchecked",
+            "patreiz_notiek":"unchecked"
+        },
+        {
+            "stunda": "3 Literatūra",
+            "laiks": "10:15 - 10:55",
+            "nenotiek":"unchecked",
+            "patreiz_notiek":"unchecked"
+        },
+		{
+            "stunda": "4 Literatūra",
+            "laiks": "11:20 - 12:05",
+            "nenotiek":"unchecked",
+            "patreiz_notiek":"checked"
+        },
+		{
+            "stunda": "5 Sports",
+            "laiks": "12:35 - 13:05",
+            "nenotiek":"unchecked",
+            "patreiz_notiek":"unchecked"
+        },
+		{
+            "stunda": "6 Mājturība",
+            "laiks": "13:20 - 14:00",
+            "nenotiek":"unchecked",
+            "patreiz_notiek":"unchecked"
+        },
+		{
+            "stunda": "7 Ekonomika",
+            "laiks": "14:05 - 14:45",
+            "nenotiek":"unchecked",
+            "patreiz_notiek":"unchecked"
+        },
+		{
+            "stunda": "8 NENOTIEK",
+            "laiks": "14:50 - 15:30",
+            "nenotiek":"checked",
+            "patreiz_notiek":"unchecked"
+        },
+    ]
 }

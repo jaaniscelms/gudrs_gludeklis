@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-klase_tv",
+      "appliesTo": "json/klase_tv.json",
+      "type": "launch"
+    }
+  ]
+}
