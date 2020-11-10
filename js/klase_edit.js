@@ -8,11 +8,11 @@ fetch('/json/klase_edit.json')
         <table class="${diena}">
           <thead>
             <tr>
-              <th class="nr">Nr.</th>
-              <th class="prieksmets">Priekšmets</th>
-              <th class="vards">Pasniedzejs</th>
-              <th class="laiks">Laiks</th>
-              <th class="nenotiek">Nenotiek</th>
+              <th class="narrow">Nr.</th>
+              <th>Priekšmets</th>
+              <th>Pasniedzejs</th>
+              <th>Laiks</th>
+              <th class="narrow">Nenotiek</th>
               <th>Darbības</th>
             </tr>
           </thead>
@@ -24,11 +24,11 @@ fetch('/json/klase_edit.json')
       data[diena].forEach((element, index) => {
         document.querySelector('.' + diena + ' tbody').innerHTML += `
           <tr>
-            <td>${index}</td>
+            <td class="narrow">${index}</td>
             <td>${element.prieksmets}</td>
             <td>${element.pasniedzejs}</td>
             <td>${element.prielaiksksmets}</td>
-            <td><input type="checkbox" ${element.nenotiek}></td>
+            <td class="narrow"><input type="checkbox" ${element.nenotiek}></td>
             <td>
               <div class="buttons">
                 <input class="button" type="button" value="Labot">
