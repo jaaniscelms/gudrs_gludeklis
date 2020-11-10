@@ -1,40 +1,42 @@
-let rinda=[];
-rinda[0]= document.querySelector('.pirmdiena');
-rinda[1]= document.querySelector('.otrdiena');
-rinda[2]= document.querySelector('.tresdiena');
-rinda[3]= document.querySelector('.ceturtdiena');
-rinda[4]= document.querySelector('.piektdiena');
-let elements=["pirmdiena","otrdiena","tresdiena","ceturtdiena","piektdiena"]
-async function iegutDatus()
-{
-    let datiNoApi = await fetch('/json/klase_edit.json')
-    let datiJson = await datiNoApi.json();
-    return datiJson;
-}
-async function raditDatus()
-{
-    let stundasJson = await iegutDatus();
-    for (let k=0; k<5;k++)
-    {
-        for (let i = 0; i < stundasJson[elements[k]].length; i++) 
-        {
-        rinda[k].innerHTML+=`
+fetch('/json/klase_edit.json')
+  .then(response => response.json())
+  .then(data => {
+    // Iet cauri katram objekta ierakstam un izveido tabulas virsrakstu un tabulu
+    for (const diena in data) {
+      document.querySelector('.dienas').innerHTML += `
+        <h3>${diena[0].toUpperCase() + diena.slice(1)}</h3>
+        <table class="${diena}">
+          <thead>
             <tr>
-            <td>`+stundasJson[elements[k]][i].nr+`</td>
-            <td>`+stundasJson[elements[k]][i].prieksmets+`</td>
-            <td>`+stundasJson[elements[k]][i].pasniedzejs+`</td>
-            <td>`+stundasJson[elements[k]][i].laiks+`</td>
-            <td><input type="checkbox"`+stundasJson[elements[k]][i].nenotiek+`></td>
-            <td>
-            <div class="buttons">
-            <input class="button" type="button" value="Labot">
-            <input class="button button_error" type="button" value="Dzēst">
-            </div>
-            <td>
+              <th class="nr">Nr.</th>
+              <th class="prieksmets">Priekšmets</th>
+              <th class="vards">Pasniedzejs</th>
+              <th class="laiks">Laiks</th>
+              <th class="nenotiek">Nenotiek</th>
+              <th>Darbības</th>
             </tr>
-            `;
-        
-        }
+          </thead>
+          <tbody></tbody>
+        </table>
+      `
+
+      // Iet cauri katra objekta ieraksta vērtībai(masīvam) un populē attiecīgo tabulu
+      data[diena].forEach((element, index) => {
+        document.querySelector('.' + diena + ' tbody').innerHTML += `
+          <tr>
+            <td>${index}</td>
+            <td>${element.prieksmets}</td>
+            <td>${element.pasniedzejs}</td>
+            <td>${element.prielaiksksmets}</td>
+            <td><input type="checkbox" ${element.nenotiek}></td>
+            <td>
+              <div class="buttons">
+                <input class="button" type="button" value="Labot">
+                <input class="button button_error" type="button" value="Dzēst">
+              </div>
+            </td>
+          </tr>
+        `
+      })
     }
-}
-raditDatus();
+  })
