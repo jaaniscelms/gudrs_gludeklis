@@ -1,0 +1,6 @@
+.dienas h3 { margin-top: 50px; }
+
+.dienas th,
+.dienas td { width: 20%; }
+
+.dienas .narrow { width: 10%; }
