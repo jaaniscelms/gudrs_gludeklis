@@ -50,16 +50,11 @@ document.getElementById('pievieno').addEventListener('click', function(){
         <input class="button button_error" type="button" value="Dzēst">
       `;
     }
-
   })
-  
 });
-document.addEventListener('click', function(){
-document.querySelectorAll(".button_error").forEach(function(index){
-  index.onclick = function(){
-    this.closest('tr').remove();
+
+document.querySelector('.teachers tbody').addEventListener('click', event => {
+  if (event.target.matches('.button_error')) {
+    event.target.closest('tr').remove();
   }
-})  
 })
-
-
