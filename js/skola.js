@@ -46,9 +46,15 @@ document.getElementById('pievieno').addEventListener('click', function(){
       this.closest('tr').classList.remove('row_edit')
 
       this.parentElement.innerHTML = `
-        <input class="button" type="button" value="Labot">
+        <input class="button button" type="button" value="Labot">
         <input class="button button_error" type="button" value="Dzēst">
       `;
     }
   })
 });
+
+document.querySelector('.teachers tbody').addEventListener('click', event => {
+  if (event.target.matches('.button_error')) {
+    event.target.closest('tr').remove();
+  }
+})
