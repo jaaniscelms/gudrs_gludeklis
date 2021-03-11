@@ -1,0 +1,25 @@
+{%extends 'base1.html'%}
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/klase_edit.css')}}">
+{% endblock %}
+{% block title %}
+Gudrs Gludeklis
+{% endblock %}
+{% block links %}
+<a href="{{url_for('skola')}}">Skola</a>
+ <a href="{{url_for('klases')}}">Klases</a>
+{% endblock %}
+{% block content %}
+    <div class="content">
+      <div class="content_wrapper">
+        <h2> Klase 1a</h2>
+        <div class="dienas"></div>
+      </div>
+    </div>
+  <script src="{{url_for('static',filename='klase_edit.js')}}"></script>
+{% endblock %}
+
+
+
+
+

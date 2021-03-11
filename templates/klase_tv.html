@@ -1,0 +1,23 @@
+
+{%extends 'base1.html'%}
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/klase_tv.css')}}">
+{% endblock %}
+{% block title %}
+Gudrs Gludeklis
+{% endblock %}
+{% block links %}
+
+{% endblock %}
+{% block content %}
+<div class="content">
+			<ul class="stundas">
+				<h1>7C<span id="time">11:37</span></h1>
+				
+		</div>
+<script>
+	var dt = new Date();
+	document.getElementById("time").innerHTML =dt.toLocaleTimeString();
+</script>
+		<script src='js/klase_tv.js'></script>
+{% endblock %}

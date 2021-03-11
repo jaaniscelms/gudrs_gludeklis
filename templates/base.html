@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/common/normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/common/buttons.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/common/form.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/common/color.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/common/global.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/common/header.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/common/table.css')}}">
+    
+    
+    {% block css %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  
+  <body>
+    {% block content %}{% endblock %}
+  </body>
+</html>
