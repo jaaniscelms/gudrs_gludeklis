@@ -10,13 +10,39 @@ Gudrs Gludeklis
  <a href="{{url_for('klases')}}">Klases</a>
 {% endblock %}
 {% block content %}
-    <div class="content">
-      <div class="content_wrapper">
-        <h2> Klase 1a</h2>
-        <div class="dienas"></div>
-      </div>
-    </div>
-  <script src="{{url_for('static',filename='klase_edit.js')}}"></script>
+<div class="content">
+  <div class="content_wrapper">
+    <h2> Klase 1a</h2>
+    <div class="dienas"></div>
+  </div>
+  <table >
+    <thead>
+      <tr>
+        {% for header in headings%}        
+        <th>{{header}}</th>        
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in data %}
+      <tr>        
+         {% for cell in row %}
+            <td>{{cell}}</td>
+          {% endfor %}
+          <td>
+            <div class="buttons">
+              <input class="button" type="button" value="Labot">
+              <input class="button button_error" type="button" value="Dzēst">
+            </div>
+            </td>
+      </tr>        
+        {% endfor %}
+       
+    </tbody>
+  </table>
+</div>
+<script src="{{url_for('static',filename='js/klase_edit.js')}}"></script>
+
 {% endblock %}
 
 
