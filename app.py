@@ -24,21 +24,14 @@ def login():
         pasw=request.form["password"]
         if usr=="admin" and pasw=="admin":
              return redirect(url_for("skola"))
-        else: 
+        else:
             return redirect(url_for("login"))
-    else: 
+    else:
      return render_template("login.html")
-headings=("Nr.","Priekšmets", "Pasniedzejs", "Laiks","Nenotiek","Darbības")
-data=(
-    (1,"Vēsture","Andris Bērziņš","9:15 - 9:55","unchecked"),
-    (2, "Sports","Pēteris Skuja","10:15 - 10:55","checked"),
-    (3,"Ekonomika","Anna Panna","11:20 - 12:05", "unchecked"),
-    (4,"Matemātika","Valdis Liepa","12:35 - 13:05","checked"),
-    (5,"Mājturība","Elita Bērziņa","12:20 - 14:00", "checked")
-)
+
 @app.route("/klase_edit")
 def klase_edit():
-    return render_template("klase_edit.html",headings=headings, data=data)
+    return render_template("klase_edit.html")
 
 @app.route("/skola")
 def skola():

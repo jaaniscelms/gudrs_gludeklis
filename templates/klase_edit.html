@@ -1,51 +1,11 @@
-{%extends 'base1.html'%}
-{% block css %}
-<link rel="stylesheet" href="{{url_for('static',filename='css/klase_edit.css')}}">
-{% endblock %}
-{% block title %}
-Gudrs Gludeklis
-{% endblock %}
-{% block links %}
-<a href="{{url_for('skola')}}">Skola</a>
- <a href="{{url_for('klases')}}">Klases</a>
-{% endblock %}
+{%extends 'layout.html'%}
+{% include 'partials/navigation.html' %}
 {% block content %}
 <div class="content">
   <div class="content_wrapper">
     <h2> Klase 1a</h2>
     <div class="dienas"></div>
   </div>
-  <table >
-    <thead>
-      <tr>
-        {% for header in headings%}        
-        <th>{{header}}</th>        
-        {% endfor %}
-      </tr>
-    </thead>
-    <tbody>
-      {% for row in data %}
-      <tr>        
-         {% for cell in row %}
-            <td>{{cell}}</td>
-          {% endfor %}
-          <td>
-            <div class="buttons">
-              <input class="button" type="button" value="Labot">
-              <input class="button button_error" type="button" value="Dzēst">
-            </div>
-            </td>
-      </tr>        
-        {% endfor %}
-       
-    </tbody>
-  </table>
 </div>
 <script src="{{url_for('static',filename='js/klase_edit.js')}}"></script>
-
 {% endblock %}
-
-
-
-
-
