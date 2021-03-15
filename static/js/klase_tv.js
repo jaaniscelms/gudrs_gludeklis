@@ -1,4 +1,4 @@
-fetch('/json/klase_tv.json')
+fetch('/static/json/klase_tv.json')
   .then(response => response.json())
   .then(data => data.forEach(element =>
     document.querySelector('.stundas').innerHTML += `

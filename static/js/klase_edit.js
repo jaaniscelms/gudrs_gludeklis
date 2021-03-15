@@ -1,4 +1,4 @@
-fetch('/json/klase_edit.json')
+fetch('/static/json/klase_edit.json')
   .then(response => response.json())
   .then(data => {
     // Iet cauri katram objekta ierakstam un izveido tabulas virsrakstu un tabulu
