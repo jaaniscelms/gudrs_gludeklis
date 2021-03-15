@@ -1,33 +1,13 @@
+{%extends 'layout.html'%}
 
-{%extends 'base.html'%}
-{% block css %}
-<link rel="stylesheet" href="{{url_for('static',filename='css/startpage.css')}}">
-{% endblock %}
-{% block title %}
-Gudrs Gludeklis
-{% endblock %}
 {% block content %}
-
-<div class="center">
+<div class="index_klases">
   <img src="{{url_for('static',filename='img/jtv_logo.svg')}}">
-  <p>Laipni lūgti Jelgavas Tehnoloģiju vidusskolā!
-    <br>
-    <p align="center">
-  <input id="klase" type="text" list="klases" />
-    <datalist id="klases">
-    <option value="7.a"></option>
-    <option value="7.b"></option>
-    <option value="7.c" ></option>
-    </datalist> 
-  <input type="submit" id="sbm" onclick="clk()" value="Doties uz klasi"/>
-  <script>
-    function clk()
-    {
-      if(document.getElementById("klases").value = "7.a")
-        {    
-          location.href="{{url_for('klase_tv')}}";
-        }
-    }      
-  </script>    
+  <p>Laipni lūgti Jelgavas Tehnoloģiju vidusskolā!</p>
+  <nav>
+    <a href="klase_tv">7.a</a>
+    <a href="klase_tv">7.b</a>
+    <a href="klase_tv">7.c</a>
+  </nav>
 </div>
 {% endblock %}

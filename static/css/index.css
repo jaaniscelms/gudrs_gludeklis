@@ -1,0 +1,18 @@
+.index_klases { text-align: center; }
+
+.index_klases img {
+  width: 50%;
+  margin: 100px 0 0;
+}
+
+.index_klases nav { margin-top: 60px; }
+
+.index_klases nav a {
+  display: block;
+  padding: 5px 10px;
+  background: var(--neutral-50);
+  width: 100px;
+  margin: 0 auto 10px;
+}
+
+.index_klases nav a:hover { background: var(--neutral-100) }
