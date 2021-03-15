@@ -1,0 +1,14 @@
+{%extends 'layout.html'%}
+
+{% block content %}
+<div class="content">
+	<ul class="stundas">
+		<h1>7C<span id="time">11:37</span></h1>
+	</ul>
+</div>
+<script>
+	var dt = new Date();
+	document.getElementById("time").innerHTML =dt.toLocaleTimeString();
+</script>
+<script src={{url_for('static',filename='js/klase_tv.js')}}></script>
+{% endblock %}

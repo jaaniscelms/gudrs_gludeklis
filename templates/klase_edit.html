@@ -1,0 +1,11 @@
+{%extends 'layout.html'%}
+{% include 'partials/navigation.html' %}
+{% block content %}
+<div class="content">
+  <div class="content_wrapper">
+    <h2> Klase 1a</h2>
+    <div class="dienas"></div>
+  </div>
+</div>
+<script src="{{url_for('static',filename='js/klase_edit.js')}}"></script>
+{% endblock %}

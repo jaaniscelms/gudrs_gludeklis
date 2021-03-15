@@ -1,0 +1,16 @@
+
+{%extends 'layout.html'%}
+
+{% block content %}
+<body class="login">
+  <a href="{{url_for('home')}}" class="logo">
+    <img src="{{url_for('static',filename='img/jtv_logo.svg')}}">
+  </a>
+
+  <form action="#" method="post">
+    <input type="text" placeholder="Lietotājvārds" name="user" >
+    <input type="password" placeholder="Parole" name="password">
+    <input class="button" type="submit" value="Pieslēgties"></a>
+  </form>
+</body>
+{% endblock %}

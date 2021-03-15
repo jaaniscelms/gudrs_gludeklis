@@ -1,5 +1,5 @@
 // Aizpilda teachers tbody ar skola.json skolotaju datiem
-fetch('/json/skola.json')
+fetch('/static/json/skola.json')
   .then(response => response.json())
   .then(data => data.forEach(element =>
     document.querySelector('.teachers tbody').innerHTML += `

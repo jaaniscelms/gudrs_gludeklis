@@ -7,7 +7,7 @@ header .current_class { font-size: 20px; }
 }
 
 .stundas h1 {
-  font-size: 36px;
+  font-size: 24px;
   margin: 0 0 40px;
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@ header .current_class { font-size: 20px; }
 
 .stundas h1 span {
   margin-left: auto;
-  font-size: 48px;
+  font-size: 24px;
 }
 
 .stundas li {

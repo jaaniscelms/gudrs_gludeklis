@@ -1,5 +1,7 @@
-# Gudrsgludeklis kopējā projekta repozitorija
+# gudrs_gludeklis
+Projekta darbinašanai uz datora jauzinstalē:
+Python ~ 3.9
+Flask ~ 1.2
 
-![alt text](img/kopskats.png "Gudrs Gludeklis projekta kopskats")
-
-Projekta augstākā hierarhija ir viena skola -> katra skola kas vēlēsies šo projektu izmantot, varēs paņemt savu projekta kopiju un tālāk jau paši hostēt un modificēt. Projekts ietver, datubāzi ar skolas skolotājiem, klasēm un katras klases stundu sarakstu nedēļai. Projektu paredzēts izmantot skolēniem/skolotājiem telefonos, datoros un uz kopēja tv ekrāna klasēs, kā arī projekta uzturētājiem izmantojot datoru un vēlams telefonu.
+Projektu piestartē:
+flask run
