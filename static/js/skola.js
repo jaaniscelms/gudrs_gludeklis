@@ -1,12 +1,12 @@
 // Aizpilda teachers tbody ar skola.json skolotaju datiem
-fetch('/static/json/skola.json')
+fetch('/skola/dati')
   .then(response => response.json())
   .then(data => data.forEach(element =>
     document.querySelector('.teachers tbody').innerHTML += `
       <tr>
         <td>${element.vards} ${element.uzvards}</td>
         <td>${element.epasts}</td>
-        <td>${element.tel_num}</td>
+        <td>${element.telefons}</td>
         <td>${element.prieksmets}</td>
         <td>
           <div class="buttons">

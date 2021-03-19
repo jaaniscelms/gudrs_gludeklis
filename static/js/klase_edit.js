@@ -1,4 +1,4 @@
-fetch('/static/json/klase_edit.json')
+fetch('/stundas/dati')
   .then(response => response.json())
   .then(data => {
     // Iet cauri katram objekta ierakstam un izveido tabulas virsrakstu un tabulu
@@ -25,10 +25,10 @@ fetch('/static/json/klase_edit.json')
         document.querySelector('.' + diena + ' tbody').innerHTML += `
           <tr>
             <td class="narrow">${index}</td>
-            <td>${element.prieksmets}</td>
-            <td>${element.pasniedzejs}</td>
-            <td>${element.prielaiksksmets}</td>
-            <td class="narrow"><input type="checkbox" ${element.nenotiek}></td>
+            <td>${element.prieksmeti}</td>
+            <td>${element.vards}${element.uzvards}</td>
+            <td>${element.laiki}</td>
+            <td class="narrow"><input type="checkbox" ${element.notiek}></td>
             <td>
               <div class="buttons">
                 <input class="button" type="button" value="Labot">
