@@ -34,14 +34,18 @@ def login():
 def klase_edit():
     return render_template("klase_edit.html")
 
+
 @app.route("/skola")
 def skola():
-    
-    """ try:
+ return render_template("skola.html")
+#================================= skolas tabulas dati ========================================
+@app.route('/skola/dati', methods=['GET'])
+def datiskolas():
+    try:
        with sqlite3.connect("Dati.db") as conn:
         conn=sqlite3.connect('Dati.db')
         c = conn.cursor()
-        c.execute("SELECT  pasniedzejs.vards, pasniedzejs.uzvards, pasniedzejs.epasts, pasniedzejs.telefons, prieksmeti.prieksmets FROM pasniedzejs JOIN prieksmeti ON pasniedzejs.prieksmeta_id = prieksmeti.prieksmeta_id ")
+        c.execute("SELECT  pasniedzejs.vards,pasniedzejs.uzvards, pasniedzejs.epasts, pasniedzejs.telefons, prieksmeti.prieksmets FROM pasniedzejs JOIN prieksmeti ON pasniedzejs.prieksmeta_id = prieksmeti.prieksmeta_id ")
         data = c.fetchall()
         jsonData = ''
         column_names = ['vards','uzvards','epasts','telefons','prieksmets']
@@ -61,9 +65,60 @@ def skola():
       c.close()
       conn.close()    
       return jsonData
+#==========================================================
 
-"""
-    return render_template("skola.html")
+#================================= audzinatajs tabulas dati ========================================
+@app.route('/klasesdati/dati', methods=['GET'])
+def datiklases():
+    try:
+       with sqlite3.connect("Dati.db") as conn:
+        conn=sqlite3.connect('Dati.db')
+        c = conn.cursor()
+        c.execute("SELECT  klases.klase, pasniedzejs.vards, pasniedzejs.uzvards FROM audzinatajs JOIN klases ON audzinatajs.klases_id = klases.klases_id JOIN pasniedzejs ON audzinatajs.pasniedzeja_id = pasniedzejs.pasniedzeja_id ")
+        data = c.fetchall()
+        jsonData = ''
+        column_names = ['klase','vards','uzvards']
+        for row in data:          
+            info = dict(zip(column_names, row))
+            jsonData = jsonData + json.dumps(info) + ','
+        jsonData = jsonData[:-1]
+        jsonData = '[' + jsonData + ']'
+        msg = "Ieraksti veiksmīgi saņemti un apstrādāti"
+        print(msg)
+    except:
+      conn.rollback()
+      msg = "Ir notikusi kļūda datu saņemšanā un apstrādāšanā"
+      print(msg)
+    finally:
+      conn.commit()
+      c.close()
+      conn.close()    
+      return jsonData
+#==========================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 if __name__=="__main__":
     app.run(debug=True)
