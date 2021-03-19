@@ -33,7 +33,8 @@ c.execute('CREATE TABLE IF NOT EXISTS stundas (stundas_id INTEGER PRIMARY KEY AU
 #c.execute("SELECT stundas_id, prieksmeti.prieksmets, pasniedzejs.vards FROM stundas JOIN prieksmeti ON stundas.prieksmeta_id = prieksmeti.prieksmeta_id JOIN PASNIEDZEJS ON stundas.pasniedzeja_id=pasniedzejs.pasniedzeja_id")
 #c.execute("SELECT  pasniedzejs.vards, pasniedzejs.uzvards, pasniedzejs.epasts, pasniedzejs.telefons, prieksmeti.prieksmets FROM pasniedzejs JOIN prieksmeti ON pasniedzejs.prieksmeta_id = prieksmeti.prieksmeta_id ")
 #c.execute('INSERT INTO audzinatajs(klases_id, pasniedzeja_id) VALUES (8,8)')
-c.execute("SELECT  klases.klase, pasniedzejs.vards, pasniedzejs.uzvards FROM audzinatajs JOIN klases ON audzinatajs.klases_id = klases.klases_id JOIN pasniedzejs ON audzinatajs.pasniedzeja_id = pasniedzejs.pasniedzeja_id ")
+#c.execute("SELECT  dienas.dienas_id,laiks.laiks_id,klases.klase,prieksmeti.prieksmets, pasniedzejs.vards, pasniedzejs.uzvards, laiks.laiki, stundas.notiek FROM stundas JOIN dienas ON stundas.dienas_id = dienas.dienas_id JOIN laiks ON stundas.laiks_id = laiks.laiks_id JOIN prieksmeti ON stundas.prieksmeta_id = prieksmeti.prieksmeta_id JOIN pasniedzejs ON stundas.pasniedzeja_id = pasniedzejs.pasniedzeja_id JOIN klases ON stundas.klases_id = klases.klases_id  ")
+c.execute("SELECT klases.klase,prieksmeti.prieksmets,laiks.laiki,stundas.dienas_id FROM stundas JOIN dienas ON stundas.dienas_id = dienas.dienas_id JOIN laiks ON stundas.laiks_id = laiks.laiks_id JOIN prieksmeti ON stundas.prieksmeta_id = prieksmeti.prieksmeta_id  JOIN klases ON stundas.klases_id = klases.klases_id  WHERE  klases.klase LIKE '1.c'")
 rows = c.fetchall()
 
 for row in rows:
